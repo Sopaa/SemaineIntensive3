@@ -1,0 +1,42 @@
+.loginGroup{
+  margin-top: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.inputEAndP{
+  width: 196px;
+  height: 15px;
+  background: #FFFFFF;
+  border: 1px solid blue;
+  border-radius: 15px;
+}
+
+.inputEAndP::placeholder{
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.checkbox{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.loginButton{
+  width: 200px;
+  height: 25px;
+  border: 1px solid blue;
+  background: #FFFFFF;
+  border-radius: 25px
+  
+}
+.loginButton:hover{
+
+  background: pink
+}
