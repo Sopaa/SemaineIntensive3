@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,49 @@
   <link rel="stylesheet" href="css/reset.css">
   <title>SI3</title>
 </head>
+
 <body>
 
   <header>
-    <img src="img/logo.png" href="index.html" alt="Logo">
+    <div class="headBackGND">
+      <div class="headContainer">
+        <img class="logo" src="img/logoeiga.svg" href="index.html" alt="Logo">
+      </div>
+    </div>
 
-    <a href="register.html"><div class="registerButton"><p class="registerText">Inscrit toi!</p></div></a>
   </header>
 
   <form>
-
     <div class="loginGroup">
-      <p class="label">Adresse mail:</p>
+      <div class="chooseType">
+        <div class="login">
+          <p class="loginText">Login</p>
+        </div>
 
-      <input type="email" class="inputEAndP" placeholder="Entrez votre Email">
-
-      <p class="label">Mot de passe:</p>
-      <input type="password" class="inputEAndP" placeholder="Entrez votre MdP">
-
-
-      <div class="checkbox">
-          <input type="checkbox" >
-          se souvenir de moi
+        <div class="register">
+          <p class="loginText">Register</p>
+        </div>
       </div>
+      <div class="loginGroupIn">
+
+        <p class="label">Adresse mail:</p>
+        <input type="email" class="inputEAndP" placeholder="Entrez votre Email">
+
+        <p class="label">Mot de passe:</p>
+        <input type="password" class="inputEAndP" placeholder="Entrez votre MdP">
 
 
-    <button type="submit" class="loginButton">Se connecter</button>
+        <div class="checkbox">
+          <input type="checkbox">se souvenir de moi
+        </div>
+
+
+        <button type="submit" class="loginButton">Se connecter</button>
+      </div>
     </div>
-</form>
-<script src="js/login.js"></script>
+  </form>
+  <script src="js/login.js"></script>
 
 </body>
+
 </html>
