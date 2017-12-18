@@ -1,42 +1,120 @@
-.loginGroup{
+@font-face {
+  font-family: 'nunito';
+    src: url("../fonts/NunitoSans-Regular.ttf");
+}
+body{
+  background-color: #353531;
+}
+.headBackGND{
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.logo{
+  width: auto;
+  height: 70px;
+  margin: auto;
+}
+
+
+.loginGroup {
   margin-top: 200px;
+  width: 250px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FCFAFA;
+  border-radius: 10px;
+}
+.loginGroupIn{
+  display: block;
   width: 200px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.label{
+.chooseType{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px
+}
+.loginText{
+  margin-top: 10px;
+  font-family: 'nunito';
+  font-size: 20px;
+  text-align: center;
+
+}
+.login{
+  background: #FCFAFA;
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+
+}
+
+.register{
+  width: 50%;
+  background: #E6E4E4;
+  height: 40px;
+  border-radius: 10px;
+}
+
+
+
+.label {
+  font-family: 'nunito';
+
+  font-size: 20px;
   margin-bottom: 5px;
   margin-top: 5px;
 }
-
-.inputEAndP{
+.label:last-child{
+  margin-top: 10px;
+}
+.inputEAndP {
+  font-family: 'nunito';
+  margin-top: 5px;
   width: 196px;
-  height: 15px;
-  background: #FFFFFF;
-  border: 1px solid blue;
-  border-radius: 15px;
+  height: 25px;
+  background: #FCFAFA;
+  border: 1px solid #731DD8;
+  border-radius: 5px;
 }
 
-.inputEAndP::placeholder{
+.inputEAndP:focus{
+  font-family: 'nunito';
+  font-size: 15px;
+}
+.inputEAndP::placeholder {
   padding-left: 5px;
   font-size: 15px;
 }
 
-.checkbox{
-  margin-top: 5px;
-  margin-bottom: 5px;
+.checkbox {
+  font-family: 'nunito';
+
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.loginButton{
+.loginButton {
+  font-family: 'nunito';
+  font-size: 15px;
+
   width: 200px;
   height: 25px;
-  border: 1px solid blue;
+  border: 1px solid #731DD8;
   background: #FFFFFF;
-  border-radius: 25px
-  
+  border-radius: 10px
 }
-.loginButton:hover{
 
-  background: pink
+.loginButton:hover{
+  background: #F2AF29;
 }
