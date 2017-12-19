@@ -1,27 +1,31 @@
 @font-face {
   font-family: 'nunito';
-    src: url("../fonts/NunitoSans-Regular.ttf");
+  src: url("../fonts/NunitoSans-Regular.ttf");
 }
-body{
+
+body {
   background-color: #353531;
 }
-.headBackGND{
+
+.headBackGND {
   height: 70px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .headContainer {
   display: flex;
   justify-content: space-between;
   padding-left: 100px;
   padding-right: 100px;
 }
-.logo{
+
+.logo {
   height: 70px;
+  cursor: pointer;
 }
 
-.logoLink{
+.logoLink {
   margin: 0 auto;
-
 }
 
 .loginGroup {
@@ -34,11 +38,12 @@ body{
   background-color: #FCFAFA;
   border-radius: 10px;
 }
+
 /*Index.html*/
 
-
 /*Login block*/
-.loginGroupIn{
+
+.loginGroupIn {
   display: block;
   width: 200px;
   height: auto;
@@ -47,7 +52,8 @@ body{
 }
 
 /*Register Block*/
-.registerGroupIn{
+
+.registerGroupIn {
   display: none;
   width: 200px;
   height: auto;
@@ -55,48 +61,47 @@ body{
   margin-right: auto;
 }
 
-.chooseType{
+.chooseType {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   margin-bottom: 10px
 }
-.loginText{
+
+.loginText {
   margin-top: 10px;
   font-family: 'nunito';
   font-size: 20px;
   text-align: center;
-
 }
-.login{
+
+.login {
   background: #FCFAFA;
   width: 50%;
   height: 40px;
   border-radius: 10px;
-
 }
 
-.register{
+.register {
   width: 50%;
   background: #E6E4E4;
   height: 40px;
   border-radius: 10px;
 }
 
-
-
 .label {
   font-family: 'nunito';
-
   font-size: 20px;
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.label:last-child{
+
+.label:last-child {
   margin-top: 10px;
 }
+
 .inputEAndP {
   font-family: 'nunito';
-
   margin-top: 5px;
   width: 196px;
   height: 25px;
@@ -112,7 +117,6 @@ body{
 
 .checkbox {
   font-family: 'nunito';
-
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -120,37 +124,37 @@ body{
 .loginButton {
   font-family: 'nunito';
   font-size: 15px;
-
   width: 200px;
   height: 25px;
   border: 1px solid #731DD8;
   background: #FFFFFF;
-  border-radius: 10px
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .registerButton {
   font-family: 'nunito';
   font-size: 15px;
-
   width: 200px;
   height: 25px;
   border: 1px solid #731DD8;
   background: #FFFFFF;
   border-radius: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
-.loginButton:hover{
+.loginButton:hover {
   background: #F2AF29;
 }
 
-.registerButton:hover{
+.registerButton:hover {
   background: #F2AF29;
 }
-
 
 /*sucessreg.html*/
-.sucessTitle{
+
+.sucessTitle {
   font-family: 'nunito';
   font-size: 30px;
   text-align: center;
@@ -158,14 +162,14 @@ body{
   padding-top: 50px;
 }
 
-.sucess{
+.sucess {
   font-family: 'nunito';
   font-size: 20px;
   text-align: center;
   margin-top: 30px;
 }
 
-.checkmail{
+.checkmail {
   font-family: 'nunito';
   font-size: 15px;
   text-align: center;
