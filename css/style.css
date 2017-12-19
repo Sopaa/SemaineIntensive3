@@ -16,11 +16,13 @@ body{
   padding-right: 100px;
 }
 .logo{
-  width: auto;
   height: 70px;
-  margin: auto;
 }
 
+.logoLink{
+  margin: 0 auto;
+
+}
 
 .loginGroup {
   display: block;
@@ -32,6 +34,8 @@ body{
   background-color: #FCFAFA;
   border-radius: 10px;
 }
+/*Index.html*/
+
 
 /*Login block*/
 .loginGroupIn{
@@ -142,4 +146,28 @@ body{
 
 .registerButton:hover{
   background: #F2AF29;
+}
+
+
+/*sucessreg.html*/
+.sucessTitle{
+  font-family: 'nunito';
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.sucess{
+  font-family: 'nunito';
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.checkmail{
+  font-family: 'nunito';
+  font-size: 15px;
+  text-align: center;
+  margin-top: 30px;
 }

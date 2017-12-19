@@ -1,3 +1,4 @@
+// link to homepage
 var logButton = document.querySelector('.loginButton');
 
 logButton.addEventListener("click", function(event) {
@@ -5,8 +6,16 @@ logButton.addEventListener("click", function(event) {
   window.location = "homepage.html";
 });
 
+// link to register sucess
 
+var regButton = document.querySelector('.registerButton');
 
+regButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  window.location = "sucessreg.html";
+});
+
+// change login <=> register
 var bckgndlog = document.querySelector('.login');
 var logblock = document.querySelector('.loginGroupIn');
 var bckgndreg = document.querySelector('.register');
