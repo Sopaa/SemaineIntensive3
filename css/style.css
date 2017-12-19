@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #353531;
+  background-image: url("../img/background3.png");
+  background-size: 100% auto;
 }
 
 .headBackGND {
@@ -29,6 +30,9 @@ body {
 }
 
 .loginGroup {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
   display: block;
   margin-top: 200px;
   width: 250px;
@@ -106,7 +110,7 @@ body {
   width: 196px;
   height: 25px;
   background: #FCFAFA;
-  border: 1px solid #731DD8;
+  border: 1px solid #1A1D24;
   border-radius: 5px;
 }
 
@@ -126,7 +130,7 @@ body {
   font-size: 15px;
   width: 200px;
   height: 25px;
-  border: 1px solid #731DD8;
+  border: 1px solid #10FEA4;
   background: #FFFFFF;
   border-radius: 10px;
   cursor: pointer;
@@ -137,7 +141,7 @@ body {
   font-size: 15px;
   width: 200px;
   height: 25px;
-  border: 1px solid #731DD8;
+  border: 1px solid #10FEA4;
   background: #FFFFFF;
   border-radius: 10px;
   margin-top: 10px;
@@ -145,11 +149,11 @@ body {
 }
 
 .loginButton:hover {
-  background: #F2AF29;
+  background: #10FEA4;
 }
 
 .registerButton:hover {
-  background: #F2AF29;
+  background: #10FEA4;
 }
 
 /*sucessreg.html*/
