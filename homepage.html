@@ -16,9 +16,6 @@
     <img src="img/logoeiga.svg" alt="Logo" class="logo">
   </header>
 
-</body>
-
-
 <div class="sectionContainer">
 
   <!--Filters-->
@@ -27,11 +24,11 @@
       <h2>Filter</h2>
       <input class="searchbar" type="text" name="" value="" placeholder="Search by genre, date ...">
       <h3>Genre</h3>
-      <p class="filterItems selected">All</p>
-      <p class="filterItems">Action</p>
-      <p class="filterItems">Animation</p>
-      <p class="filterItems">Comedy</p>
-      <p class="filterItems">Horror/Thriller</p>
+      <p class="filterItems all selected" data-genre="categories">All</p>
+      <p class="filterItems" data-genre="Action">Action</p>
+      <p class="filterItems" data-genre="Animation">Animation</p>
+      <p class="filterItems" data-genre="Comedy">Comedy</p>
+      <p class="filterItems" data-genre="Horror / Thriller">Horror/Thriller</p>
       <h3>Rating</h3>
       <div class="ratingContainer">
         <div class="ratingItem noted"></div>
@@ -41,14 +38,21 @@
         <div class="ratingItem"></div>
       </div>
       <h3>Year</h3>
-      <p class="filterItems">2010</p>
-      <p class="filterItems">2011</p>
       <p class="filterItems">2012</p>
       <p class="filterItems">2013</p>
       <p class="filterItems">2014</p>
       <p class="filterItems">2015</p>
       <p class="filterItems">2016</p>
       <p class="filterItems">2017</p>
+    </div>
+
+    <div class="usernameContainer">
+      <div class="userImage"></div>
+      <div class="usernameTXT">
+
+
+      <p class="usernameFont">Username</p>
+      </div>
     </div>
   </div>
 
@@ -58,71 +62,14 @@
     <div class="filmMargin">
       <h2>All movies</h2>
       <div class="filmItemContainer">
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
-        <div class="filmItem"><img src="" alt="" class="filmPic">
-          <p class="filmTxtOverlay">test</p>
-        </div>
       </div>
     </div>
   </div>
 
   <div class="playerContainer">
-    <div class="playerBox">
-      <img class="playButton" src="img/play-button.svg" alt="">
-    </div>
+    <video class="playerBox"></video>
+
+
     <div class="textPlayer">
       <h1>Title of the Video</h1>
 
@@ -166,5 +113,7 @@
       <p class="description descriptionInfo">As part of the on-going Star Wars-inspired action comedy video series between YouTubers Corey Vidal (ApprenticeA) and Craig Benzine (Wheezy Waiter), the guys take the battle to the Cantina with a new lightsaber fight.</p>
     </div>
   </div>
-
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/homescript.js"></script>
+</body>
 </html>
