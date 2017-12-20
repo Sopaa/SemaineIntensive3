@@ -51,7 +51,7 @@ p {
 }
 
 .header {
-  z-index: -1;
+  position: relative;
   background: #1A1D24;
   box-shadow: 0 1px 10px 0 rgba(0,0,0,0.40);
   height: 60px;
@@ -66,7 +66,6 @@ p {
 
 
 .sectionContainer {
-  z-index: 2;
   display: flex;
   flex-direction: row;
 }
@@ -75,8 +74,8 @@ p {
 
 .filterContainer {
   width: 17%;
-  height: calc(100vh - 60px);
   background: #1A1D24;
+  overflow: scroll;
 }
 
 .filterMargin {
@@ -137,6 +136,9 @@ p {
 /*FILM PART*/
 
 .filmContainer {
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.53);
+  box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.53);
   width: 22%;
   height: calc(100vh - 60px);
   background: #2A2D34;
@@ -157,6 +159,8 @@ p {
 }
 
 .filmItem {
+  z-index: 0;
+  cursor: pointer;
   width: 132px;
   height: 90px;
   border-radius: 10px;
@@ -166,10 +170,12 @@ p {
 }
 
 .filmItem:hover {
+  z-index: 0;
   filter: blur(1px);
 }
 
 .filmTxtOverlay {
+  z-index: 1;
   text-align: center;
 }
 
@@ -177,8 +183,8 @@ p {
 
 .playerContainer {
   width: 61%;
-  height: calc(100vh-60px);
   background: #1A1D24;
+  overflow: scroll;
 }
 
 .playerBox {
@@ -268,4 +274,31 @@ box-shadow: 0px 0px 105px 0px rgba(0,0,0,0.75);
 .description {
   margin-top: 41px;
   text-align: justify;
+  line-height: 150%
+}
+
+
+
+/*Username part*/
+
+.usernameContainer{
+  cursor: pointer;
+  margin-top: 50px;
+  display: inline-flex;
+}
+
+.userImage{
+  margin-right: 10px;
+  margin-left: 30px;
+  height: 32px;
+  width: 32px;
+  background: #FEDE24;
+  border-radius: 100%;
+}
+.usernameTXT{
+  margin-top: 10px;
+}
+.usernameFont{
+  font-family: 'nunitoxbold';
+  font-size: 14px;
 }
