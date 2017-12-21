@@ -13,94 +13,107 @@
 
 <body>
   <header class="header">
-      <img src="img/logoeiga.svg" alt="Logo" class="logo">
+    <img src="img/logoeiga.svg" alt="Logo" class="logo">
   </header>
 
+<div class="sectionContainer">
 
-
-  <div class="bodyContainer">
-
-    <div class="filterContainer">
-      <h2 class="sectionTitle">Filters</h2>
-      <input class="searchbar" type="text" name="" value="" placeholder="search">
-
-      <h3 class="filterItem">Genre</h3>
-      <div class="checkbox">
-        <input type="checkbox">Animation
+  <!--Filters-->
+  <div class="filterContainer">
+    <div class="filterMargin">
+      <h2>Filter</h2>
+      <input class="searchbar" type="text" name="" value="" placeholder="Search by genre, date ...">
+      <h3>Genre</h3>
+      <p class="filterItems all selected" data-genre="categories">All</p>
+      <p class="filterItems" data-genre="Action">Action</p>
+      <p class="filterItems" data-genre="Animation">Animation</p>
+      <p class="filterItems" data-genre="Comedy">Comedy</p>
+      <p class="filterItems" data-genre="Horror / Thriller">Horror/Thriller</p>
+      <h3>Rating</h3>
+      <div class="ratingContainer">
+        <div class="ratingItem noted"></div>
+        <div class="ratingItem"></div>
+        <div class="ratingItem"></div>
+        <div class="ratingItem"></div>
+        <div class="ratingItem"></div>
       </div>
-      <div class="checkbox">
-        <input type="checkbox">Action
-      </div>
-      <div class="checkbox">
-        <input type="checkbox">Comédie
-      </div>
-      <div class="checkbox">
-        <input type="checkbox">Horreur
-      </div>
-
-
-      <h3 class="filterItem">Notes</h3>
-
-      <div class="markContainer">
-        <div class="notesItem"></div>
-        <div class="notesItem"></div>
-        <div class="notesItem"></div>
-        <div class="notesItem"></div>
-        <div class="notesItem"></div>
-      </div>
-
-      <div class="yearContainer">
-        <h3 class="filterItem">Année</h3>
-
-        <div class="checkbox">
-          <input type="checkbox">2010
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">2011
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">2012
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">2013
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">2014
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">2015
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">2016
-        </div>
-        <div class="checkbox">
-          <input type="checkbox">2017
-        </div>
-      </div>
-
-
-      <div class="goButton">
-        <button class="goButtonItem" type="button" name="go">GO!</button>
-      </div>
-
+      <h3>Year</h3>
+      <p class="filterItems">2012</p>
+      <p class="filterItems">2013</p>
+      <p class="filterItems">2014</p>
+      <p class="filterItems">2015</p>
+      <p class="filterItems">2016</p>
+      <p class="filterItems">2017</p>
     </div>
 
+    <div class="usernameContainer">
+      <div class="userImage"></div>
+      <div class="usernameTXT">
 
 
-
-    <div class="allFilmContainer">
-
-    </div>
-
-
-
-
-
-    <div class="playerContainer">
-
+      <p class="usernameFont">Username</p>
+      </div>
     </div>
   </div>
 
-</body>
 
+
+  <div class="filmContainer">
+    <div class="filmMargin">
+      <h2>All movies</h2>
+      <div class="filmItemContainer">
+      </div>
+    </div>
+  </div>
+
+  <div class="playerContainer">
+    <video class="playerBox"></video>
+
+
+    <div class="textPlayer">
+      <h1>Title of the Video</h1>
+
+      <div class="playerInfo">
+        <div class="InfoContainer">
+          <h3 class="marginReset blackInfo">Created by</h3>
+          <p class="fontPlayer author authorInfo">Author Name</p>
+        </div>
+        <div class="InfoContainer">
+
+          <h3 class="marginReset blackInfo">Year</h3>
+          <p class="fontPlayer year YearInfo">2010</p>
+        </div>
+        <div class="InfoContainer">
+
+          <h3 class="marginReset blackInfo">Rating</h3>
+          <div class="marginFix ratingContainer">
+            <div class="ratingItem ratingInfo"></div>
+            <div class="ratingItem ratingInfo"></div>
+            <div class="ratingItem ratingInfo"></div>
+            <div class="ratingItem ratingInfo"></div>
+            <div class="ratingItem ratingInfo"></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="playerInfo1">
+
+        <div class="InfoContainer">
+
+          <h3 class="marginReset blackInfo">Genre</h3>
+          <p class="fontPlayer genre genreInfo">Animation</p>
+        </div>
+        <div class="InfoContainer">
+
+          <h3 class="marginReset blackInfo durationFix">Duration</h3>
+          <p class="fontPlayer duration durationInfo">4:45</p>
+        </div>
+      </div>
+
+      <p class="description descriptionInfo">As part of the on-going Star Wars-inspired action comedy video series between YouTubers Corey Vidal (ApprenticeA) and Craig Benzine (Wheezy Waiter), the guys take the battle to the Cantina with a new lightsaber fight.</p>
+    </div>
+  </div>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/homescript.js"></script>
+</body>
 </html>
