@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'nunito';
+  src: url("../fonts/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'nunitolight';
+  src: url("../fonts/NunitoSans-Light.ttf");
+}
+
+@font-face {
+  font-family: 'nunitoxbold';
+  src: url("../fonts/NunitoSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: 'nunitoblack';
+  src: url("../fonts/NunitoSans-Black.ttf");
+}
+
+.header{
+  background: #1A1D24;
+  height: 60px;
+  display: block;
+}
+
+.filterTitle{
+  width: 14vh;
+  background: red;
+}
+
+.filmTitle{
+  width: 26vh;
+  background-color: blue;
+
+}
+
+.playerTitle{
+  width: 60vh;
+  background: orange;
+
+}
+
+.sectionTitle{
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'nunitoblack';
+  font-size: 25px;
+  font-weight: 50%;
+  color: #FFFFFF;
+}
+
+.bodyContainer{
+  width: 300vh;
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.filterContainer{
+  width: 14%;
+  background: #1A1D24;
+}
+
+.searchbar{
+
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 26px;
+  width: 154px;
+  border-radius: 5px;
+  border: none;
+  background: #FFFFFF;
+}
+
+.searchbar::placeholder{
+  font-family: 'nunitolight';
+  font-size: 15px;
+  text-align: center;
+  color: #CACACA;
+}
+
+.allFilmContainer{
+  width: 26%;
+  background-color: pink;
+}
+
+
+
+.playerContainer{
+  width: 60%;
+  background: brown;
+}
+
+.logo{
+  display: block;
+  width: 109px;
+  margin: auto;
+  padding-top: 10px;
+}
