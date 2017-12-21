@@ -16,104 +16,105 @@
     <img src="img/logoeiga.svg" alt="Logo" class="logo">
   </header>
 
-<div class="sectionContainer">
+  <div class="sectionContainer">
 
-  <!--Filters-->
-  <div class="filterContainer">
-    <div class="filterMargin">
-      <h2>Filter</h2>
-      <input class="searchbar" type="text" name="" value="" placeholder="Search by genre, date ...">
-      <h3>Genre</h3>
-      <p class="filterItems all selected" data-genre="categories">All</p>
-      <p class="filterItems" data-genre="Action">Action</p>
-      <p class="filterItems" data-genre="Animation">Animation</p>
-      <p class="filterItems" data-genre="Comedy">Comedy</p>
-      <p class="filterItems" data-genre="Horror / Thriller">Horror/Thriller</p>
-      <h3>Rating</h3>
-      <div class="ratingContainer">
-        <div class="ratingItem noted"></div>
-        <div class="ratingItem"></div>
-        <div class="ratingItem"></div>
-        <div class="ratingItem"></div>
-        <div class="ratingItem"></div>
-      </div>
-      <h3>Year</h3>
-      <p class="filterItems">2012</p>
-      <p class="filterItems">2013</p>
-      <p class="filterItems">2014</p>
-      <p class="filterItems">2015</p>
-      <p class="filterItems">2016</p>
-      <p class="filterItems">2017</p>
-    </div>
-
-    <div class="usernameContainer">
-      <div class="userImage"></div>
-      <div class="usernameTXT">
-
-
-      <p class="usernameFont">Username</p>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="filmContainer">
-    <div class="filmMargin">
-      <h2>All movies</h2>
-      <div class="filmItemContainer">
-      </div>
-    </div>
-  </div>
-
-  <div class="playerContainer">
-    <video class="playerBox" controls></video>
-
-
-    <div class="textPlayer">
-      <h1>Title of the Video</h1>
-
-      <div class="playerInfo">
-        <div class="InfoContainer">
-          <h3 class="marginReset blackInfo">Created by</h3>
-          <p class="fontPlayer author authorInfo">Author Name</p>
+    <!--Filters-->
+    <div class="filterContainer">
+      <div class="filterMargin">
+        <h2>Filter</h2>
+        <input class="searchbar" type="text" placeholder="Search by genre, date ...">
+        <h3>Genre</h3>
+        <p class="filterItems all selected" data-genre="categories">All</p>
+        <p class="filterItems" data-genre="Action">Action</p>
+        <p class="filterItems" data-genre="Animation">Animation</p>
+        <p class="filterItems" data-genre="Comedy">Comedy</p>
+        <p class="filterItems" data-genre="Horror / Thriller">Horror/Thriller</p>
+        <h3>Rating</h3>
+        <div class="ratingContainer">
+          <div class="ratingItem noted"></div>
+          <div class="ratingItem"></div>
+          <div class="ratingItem"></div>
+          <div class="ratingItem"></div>
+          <div class="ratingItem"></div>
         </div>
-        <div class="InfoContainer">
+        <h3>Year</h3>
+        <p class="filterItems years" data-year="2012">2012</p>
+        <p class="filterItems years" data-year="2013">2013</p>
+        <p class="filterItems years" data-year="2014">2014</p>
+        <p class="filterItems years" data-year="2015">2015</p>
+        <p class="filterItems years" data-year="2016">2016</p>
+        <p class="filterItems years" data-year="2017">2017</p>
+      </div>
 
-          <h3 class="marginReset blackInfo">Year</h3>
-          <p class="fontPlayer year YearInfo">2010</p>
+      <div class="usernameContainer">
+        <div class="userImage"></div>
+        <div class="usernameTXT">
+
+
+          <p class="usernameFont">Username</p>
         </div>
-        <div class="InfoContainer">
+      </div>
+    </div>
 
-          <h3 class="marginReset blackInfo">Rating</h3>
-          <div class="marginFix ratingContainer">
-            <div class="ratingItem ratingInfo"></div>
-            <div class="ratingItem ratingInfo"></div>
-            <div class="ratingItem ratingInfo"></div>
-            <div class="ratingItem ratingInfo"></div>
-            <div class="ratingItem ratingInfo"></div>
+
+
+    <div class="filmContainer">
+      <div class="filmMargin">
+        <h2 class="movieAll">All movies</h2>
+        <div class="filmItemContainer">
+        </div>
+      </div>
+    </div>
+
+    <div class="playerContainer">
+      <video class="playerBox"></video>
+
+
+      <div class="textPlayer">
+        <h1 class="descTitle">Title of the Video</h1>
+
+        <div class="playerInfo">
+          <div class="InfoContainer">
+            <h3 class="marginReset blackInfo">Created by</h3>
+            <p class="fontPlayer author authorInfo descAuth">Author Name</p>
           </div>
+          <div class="InfoContainer">
 
+            <h3 class="marginReset blackInfo">Year</h3>
+            <p class="fontPlayer year YearInfo descYear">2010</p>
+          </div>
+          <div class="InfoContainer">
+
+            <h3 class="marginReset blackInfo">Rating</h3>
+            <div class="marginFix ratingContainer">
+              <div class="ratingItem ratingInfo"></div>
+              <div class="ratingItem ratingInfo"></div>
+              <div class="ratingItem ratingInfo"></div>
+              <div class="ratingItem ratingInfo"></div>
+              <div class="ratingItem ratingInfo"></div>
+            </div>
+
+          </div>
         </div>
+        <div class="playerInfo1">
+
+          <div class="InfoContainer">
+
+            <h3 class="marginReset blackInfo ">Genre</h3>
+            <p class="fontPlayer genre genreInfo descCat">Animation</p>
+          </div>
+          <div class="InfoContainer">
+
+            <h3 class="marginReset blackInfo durationFix">Duration</h3>
+            <p class="fontPlayer duration durationInfo descDur">4:45</p>
+          </div>
+        </div>
+
+        <p class="description descriptionInfo descDesc">As part of the on-going Star Wars-inspired action comedy video series between YouTubers Corey Vidal (ApprenticeA) and Craig Benzine (Wheezy Waiter), the guys take the battle to the Cantina with a new lightsaber fight.</p>
       </div>
-      <div class="playerInfo1">
-
-        <div class="InfoContainer">
-
-          <h3 class="marginReset blackInfo">Genre</h3>
-          <p class="fontPlayer genre genreInfo">Animation</p>
-        </div>
-        <div class="InfoContainer">
-
-          <h3 class="marginReset blackInfo durationFix">Duration</h3>
-          <p class="fontPlayer duration durationInfo">4:45</p>
-        </div>
-      </div>
-
-      <p class="description descriptionInfo">As part of the on-going Star Wars-inspired action comedy video series between YouTubers Corey Vidal (ApprenticeA) and Craig Benzine (Wheezy Waiter), the guys take the battle to the Cantina with a new lightsaber fight.</p>
     </div>
-  </div>
-<script type="text/javascript" src="js/data.js"></script>
-<script type="text/javascript" src="js/homescript.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/homescript.js"></script>
 </body>
+
 </html>
