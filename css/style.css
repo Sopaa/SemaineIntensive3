@@ -1,28 +1,50 @@
 @font-face {
-  font-family: 'nunito';
+  font-family: 'nunitoregular';
   src: url("../fonts/NunitoSans-Regular.ttf");
 }
 
-body {
-  background-image: url("../img/background3.png");
-  background-size: 100% auto;
+@font-face {
+  font-family: 'nunitoblack';
+  src: url("../fonts/NunitoSans-Black.ttf");
 }
 
-.headBackGND {
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0.5);
+body {
+  background: #1A1D24;
+  background-position: cover;
+  min-height:100%;
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 0
 }
 
 .headContainer {
   display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
+  justify-content: center;
+  padding-top: 130px;
 }
 
 .logo {
-  height: 70px;
+  width: 200px;
   cursor: pointer;
+  -webkit-filter: drop-shadow( 0px 0px 10px rgba(0,0,0,.3) );
+          filter: drop-shadow( 0px 0px 10px rgba(0,0,0,.3) );
 }
 
 .logoLink {
@@ -31,16 +53,21 @@ body {
 
 .loginGroup {
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
--moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
   display: block;
-  margin-top: 200px;
-  width: 250px;
-  height: 300px;
+  margin-top: 60px;
+  width: 320px;
+  height: 350px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #FCFAFA;
-  border-radius: 10px;
+  background-color: #2A2D34;
+  border-radius: 15px;
+}
+
+.loginContent {
+  box-sizing:border-box;
+  padding: 0 30px;
 }
 
 /*Index.html*/
@@ -48,18 +75,18 @@ box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
 /*Login block*/
 
 .loginGroupIn {
-  display: block;
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*Register Block*/
 
 .registerGroupIn {
   display: none;
-  width: 200px;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -69,113 +96,149 @@ box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-bottom: 10px
+  margin-bottom: 45px
 }
 
 .loginText {
+  color: #fff;
   margin-top: 10px;
-  font-family: 'nunito';
+  font-family: 'nunitoblack';
   font-size: 20px;
   text-align: center;
 }
 
 .login {
-  background: #FCFAFA;
+  background: #2A2D34;
   width: 50%;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 15px 0 0 0;
 }
 
 .register {
   width: 50%;
-  background: #E6E4E4;
+  background: #707070;
   height: 40px;
-  border-radius: 10px;
-}
-
-.label {
-  font-family: 'nunito';
-  font-size: 20px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.label:last-child {
-  margin-top: 10px;
+  border-radius: 0 15px 0 0;
 }
 
 .inputEAndP {
-  font-family: 'nunito';
-  margin-top: 5px;
-  width: 196px;
-  height: 25px;
-  background: #FCFAFA;
-  border: 1px solid #1A1D24;
-  border-radius: 5px;
+  width: 260px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, otherWebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  margin-bottom: 20px;
+  font-family: 'nunitoregular';
+  font-size: 14px;
+  height: 32px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 20px;
 }
 
 .inputEAndP::placeholder {
-  padding-left: 5px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .checkbox {
-  font-family: 'nunito';
-  margin-top: 10px;
-  margin-bottom: 20px;
+  align-self: flex-start;
+  color: #fff;
+  font-family: 'nunitoregular';
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .loginButton {
-  font-family: 'nunito';
-  font-size: 15px;
-  width: 200px;
-  height: 25px;
-  border: 1px solid #10FEA4;
-  background: #FFFFFF;
-  border-radius: 10px;
+  font-family: 'nunitoblack';
+  font-size: 16px;
+  width: 150px;
+  height: 32px;
+  background: #FEDE10;
+  border-radius: 20px;
   cursor: pointer;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .registerButton {
-  font-family: 'nunito';
-  font-size: 15px;
-  width: 200px;
-  height: 25px;
-  border: 1px solid #10FEA4;
-  background: #FFFFFF;
-  border-radius: 10px;
-  margin-top: 10px;
+  font-family: 'nunitoblack';
+  font-size: 16px;
+  width: 150px;
+  height: 32px;
+  background: #FEDE10;
+  border-radius: 20px;
   cursor: pointer;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .loginButton:hover {
-  background: #10FEA4;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
 }
 
 .registerButton:hover {
-  background: #10FEA4;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.3);
+}
+
+/* noaccount */
+
+.noAccountContainer {
+  margin-top: 45px;
+  background: #FEDE10;
+  width: 100%;
+  height: 40px;
+  border-radius: 0 0 15px 15px;
+}
+
+.noAccountLink {
+  text-decoration: none;
+  color: #1A1D24;
+}
+
+.noAccountText{
+  font-family: 'nunitoregular';
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  top: 35%;
 }
 
 /*sucessreg.html*/
 
+.successReg {
+  display: none;
+  flex-direction: column;
+}
+
 .sucessTitle {
-  font-family: 'nunito';
+  font-family: 'nunitoblack';
   font-size: 30px;
+  color: #FEDE10;
   text-align: center;
-  font-weight: bold;
-  padding-top: 50px;
+  padding-top: 60px;
+  margin-bottom: 60px;
 }
 
 .sucess {
-  font-family: 'nunito';
-  font-size: 20px;
+  font-family: 'nunitoregular';
+  font-size: 16px;
+  color: #fff;
   text-align: center;
-  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+span {
+  color: #FEDE10;
 }
 
 .checkmail {
-  font-family: 'nunito';
-  font-size: 15px;
+  font-family: 'nunitoregular';
+  color: #fff;
+  font-size: 16px;
   text-align: center;
-  margin-top: 30px;
 }

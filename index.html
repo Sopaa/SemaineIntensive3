@@ -8,49 +8,184 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="shortcut icon" href="img/favicon.png">
+  <script type="text/javascript" src="js/particles.js"></script>
   <title>eiga</title>
 </head>
 
 <body>
-  <header>
-    <div class="headBackGND">
-      <div class="headContainer">
-        <a class="logoLink" href="index.html"><img class="logo" src="img/logoeiga.svg" href="index.html" alt="Logo"></a>
-      </div>
-    </div>
-  </header>
-  <form>
-    <div class="loginGroup">
-      <div class="chooseType">
-        <div class="login">
-          <p class="loginText">Se connecter</p>
+  <div id="particles-js"></div>
+
+  <div class="allContent">
+    <header>
+        <div class="headContainer">
+          <a class="logoLink" href="homepage.html"><img class="logo" src="img/logoeiga.svg" href="index.html" alt="Logo"></a>
         </div>
-        <div class="register">
-          <p class="loginText">S'enregister</p>
+    </header>
+
+    <form>
+
+      <div class="loginGroup">
+        <div class="chooseType">
+          <div class="login">
+            <p class="loginText">Log in</p>
+          </div>
+          <div class="register">
+            <p class="loginText">Register</p>
+          </div>
+
+          <div class="successReg">
+            <h1 class="sucessTitle">Congratulations !</h1>
+            <h2 class="sucess">You are now a proud member of <span>eiga !</span></h2>
+            <p class="checkmail">Now you just need to check your mail to confirm.</p>
+          </div>
+        </div>
+
+      <div class="loginContent">
+        <div class="loginGroupIn">
+          <input type="email" class="inputEAndP" placeholder="E-mail adress or login">
+          <input type="password" class="inputEAndP" placeholder="Password">
+          <div class="checkbox">
+            <input type="checkbox">Remember me
+          </div>
+          <button type="submit" class="loginButton">Log in</button>
+        </div>
+
+        <div class="registerGroupIn">
+          <input type="email" class="inputEAndP" placeholder="E-mail adress">
+          <input type="password" class="inputEAndP" placeholder="Password">
+          <input type="password" class="inputEAndP" placeholder="Confirm password">
+          <button type="submit" class="registerButton">Register</button>
         </div>
       </div>
-      <div class="loginGroupIn">
-        <p class="label">Adresse mail:</p>
-        <input type="email" class="inputEAndP" placeholder="Entrez votre Email">
-        <p class="label">Mot de passe:</p>
-        <input type="password" class="inputEAndP" placeholder="Entrez votre MdP">
-        <div class="checkbox">
-          <input type="checkbox">se souvenir de moi
+
+          <a href="homepage.html" class="noAccountLink">
+            <div class="noAccountContainer">
+              <p class="noAccountText">
+                No thanks, I just want to browse freely
+              </p>
+            </div>
+          </a>
         </div>
-        <button type="submit" class="loginButton">Se connecter</button>
       </div>
-      <div class="registerGroupIn">
-        <p class="label">Adresse mail:</p>
-        <input type="email" class="inputEAndP" placeholder="Entrez votre Email">
-        <p class="label">Mot de passe:</p>
-        <input type="password" class="inputEAndP" placeholder="Entrez votre MdP">
-        <p class="label">Confirmer le mot de passe:</p>
-        <input type="password" class="inputEAndP" placeholder="Confirmer votre MdP">
-        <button type="submit" class="registerButton">Creer un compte</button>
-      </div>
-    </div>
+
   </form>
-  <script src="js/login.js"></script>
+
+
+
+
+  <script type="text/javascript">
+   particlesJS("particles-js",{
+     "particles": {
+       "number": {
+         "value": 28,
+         "density": {
+           "enable": false,
+           "value_area": 190
+         }
+       },
+       "color": {
+         "value": "#fede10"
+       },
+       "shape": {
+         "type": "circle",
+         "stroke": {
+           "width": 0,
+           "color": "#000"
+         },
+         "polygon": {
+           "nb_sides": 6
+         },
+         "image": {
+           "src": "img/github.svg",
+           "width": 100,
+           "height": 100
+         }
+       },
+       "opacity": {
+         "value": 1,
+         "random": true,
+         "anim": {
+           "enable": true,
+           "speed": 0.2,
+           "opacity_min": 0.1,
+           "sync": false
+         }
+       },
+       "size": {
+         "value": 90,
+         "random": true,
+         "anim": {
+           "enable": true,
+           "speed": 1,
+           "size_min": 40,
+           "sync": false
+         }
+       },
+       "line_linked": {
+         "enable": false,
+         "distance": 200,
+         "color": "#ffffff",
+         "opacity": 1,
+         "width": 2
+       },
+       "move": {
+         "enable": true,
+         "speed": 0.3,
+         "direction": "none",
+         "random": true,
+         "straight": false,
+         "out_mode": "out",
+         "bounce": true,
+         "attract": {
+           "enable": false,
+           "rotateX": 600,
+           "rotateY": 1200
+         }
+       }
+     },
+     "interactivity": {
+       "detect_on": "window",
+       "events": {
+         "onhover": {
+           "enable": false,
+           "mode": "bubble"
+         },
+         "onclick": {
+           "enable": false,
+           "mode": "push"
+         },
+         "resize": true
+       },
+       "modes": {
+         "grab": {
+           "distance": 400,
+           "line_linked": {
+             "opacity": 1
+           }
+         },
+         "bubble": {
+           "distance": 300,
+           "size": 50,
+           "duration": 2,
+           "opacity": 8,
+           "speed": 3
+         },
+         "repulse": {
+           "distance": 200,
+           "duration": 0.4
+         },
+         "push": {
+           "particles_nb": 4
+         },
+         "remove": {
+           "particles_nb": 2
+         }
+       }
+     },
+     "retina_detect": true
+   });
+</script>
+<script src="js/login.js"></script>
 </body>
 
 </html>
