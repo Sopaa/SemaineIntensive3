@@ -93,7 +93,6 @@ body {
 }
 
 .chooseType {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   margin-bottom: 45px
@@ -241,4 +240,9 @@ span {
   color: #fff;
   font-size: 16px;
   text-align: center;
+}
+
+input:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px #FEDE10;
 }

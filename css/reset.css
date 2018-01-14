@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background: #1A1D24;
 }
 ol, ul {
 	list-style: none;
@@ -42,7 +43,17 @@ table {
 	border-spacing: 0;
 }
 
-input:focus {
+button:focus{
 	outline: none;
-  box-shadow: 0 0 0 3px #FEDE10;
+}
+
+
+
+
+
+::-moz-selection{
+	background: #FEDE10;
+}
+::selection{
+	background: #FEDE10;
 }
