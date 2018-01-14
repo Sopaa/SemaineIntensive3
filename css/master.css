@@ -74,8 +74,8 @@ p {
 .filterContainer {
   width: 17%;
   background: #1A1D24;
-  /*overflow: scroll;*/
-  height: auto;
+  overflow: scroll;
+  height: calc(100vh - 60px);
 }
 
 .filterMargin {
